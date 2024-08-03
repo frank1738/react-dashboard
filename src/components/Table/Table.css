@@ -1,0 +1,91 @@
+.css-135n7wv-MuiPaper-root {
+  border-radius: 16px;
+  padding: 12px 20px;
+}
+
+.tss-95eq7i-MUIDataTableFilter-root {
+  max-width: 400px;
+  margin-left: 30px;
+}
+
+.css-1o6r7dj-MuiTableCell-root {
+  border-bottom: none !important;
+}
+
+.mobile-user-component-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-silver);
+  font-size: 16px;
+}
+
+.mobile-user-component-div {
+  background-color: var(--clr-primary);
+  padding: 12px 10px;
+  border-radius: 4px;
+  border: var(--mobile-border);
+}
+
+.mobile-user-component-icon {
+  transform: rotate(-90deg);
+}
+
+.rotate-down {
+  transform: rotate(360deg);
+}
+
+.mobile-user-component-details {
+  margin-top: 12px;
+  padding: 12px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-user-component-details > div {
+  display: flex;
+  justify-content: space-between;
+  color: var(--clr-white);
+}
+
+.mobile-user-component-details > div > :nth-child(2) {
+  color: var(--clr-silver-v1);
+}
+
+.mobile-list-user {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.mobile-search {
+  border: 1px solid var(--clr-primar-light);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.mobile-search > input {
+  width: 90%;
+  font-size: 16px;
+  font-family: var(--font-family-bai);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--clr-silver-v1);
+}
+
+.no-user {
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.MuiFormControl-root.tss-9562fz-MUIDataTableViewCol-root.css-1nrlq1o-MuiFormControl-root {
+  width: 200px !important;
+  padding: 23px !important;
+}

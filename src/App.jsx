@@ -1,50 +1,23 @@
-import Home from './pages/home/Home';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Footer from './components/footer/Footer';
-import Menu from './components/menu/Menu';
-import Users from './pages/users/Users';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Layout from './layout/Layout';
 
-const queryClient = new QueryClient();
 function App() {
-  const Layout = () => {
-    return (
-      <div className="main">
-        <Navbar />
-        <div className="container">
-          <div className="menuContainer">
-            <Menu />
-          </div>
-          <div className="contentContainer">
-            <QueryClientProvider client={queryClient}>
-              <Outlet />
-            </QueryClientProvider>
-          </div>
+  const queryClient = new QueryClient();
+  return (
+    <>
+      <QueryClientProvider client={queryClient}>
+        <div className="app">
+          <Router>
+            <Sidebar />
+            <Layout />
+          </Router>
         </div>
-        <Footer />
-      </div>
-    );
-  };
-
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
-        {
-          path: '/',
-          element: <Home />,
-        },
-        {
-          path: '/users',
-          element: <Users />,
-        },
-      ],
-    },
-  ]);
-
-  return <RouterProvider router={router} />;
+      </QueryClientProvider>
+    </>
+  );
 }
 
 export default App;

@@ -1,0 +1,56 @@
+.settings-page-div-container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  background-color: var(--clr-primary);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
+}
+
+.settings-header {
+  border-bottom: 1px solid var(--accounts-border-line);
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.settings-header > h2 {
+  font-size: 28px;
+  color: var(--clr-white);
+}
+
+.settings-page-div-container > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.theme-options {
+  margin-top: 20px;
+}
+
+.theme-options > h3 {
+  font-size: 20px;
+  color: var(--clr-white);
+}
+
+.theme-options > div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theme-options > div > div {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  color: var(--clr-white);
+}
+
+.theme-options > div > div > input,
+.theme-options > div > div > label {
+  cursor: pointer;
+}
